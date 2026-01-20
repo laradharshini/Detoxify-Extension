@@ -1,4 +1,4 @@
-# Detoxify Extension 🛡️
+# Detoxify
 
 Detoxify is a Chrome extension designed to monitor and mitigate toxic behavior on social platforms (starting with WhatsApp Web). It uses AI to analyze messages and provides non-toxic, kind, or professional alternatives in real-time.
 
@@ -7,8 +7,6 @@ Detoxify is a Chrome extension designed to monitor and mitigate toxic behavior o
 - **Smart Suggestions:** Powered by Groq/LLM to suggest polite or funny alternatives in multiple languages (Hindi, Tamil, English, etc.).
 - **Incident Reporting:** Manual reporting system to notify trusted contacts via Email or WhatsApp.
 - **Privacy First:** Analyzes text locally or via secure API calls.
-
----
 
 ## How to Install and Use
 
@@ -46,13 +44,8 @@ The AI analysis depends on a Flask backend.
    ```
 *The server must be running at `http://localhost:5000` for the AI features to work.*
 
----
-
 ## Configuration
 Once installed, click the **Detoxify Icon** in your browser toolbar to:
 - Set your preferred Toxicity Alert Threshold.
 - Configure your **Trusted Email** for incident reports.
 - Enter your own **Groq API Key** if you prefer to use your own quota.
-
-## Contributing
-Feel free to fork this repository and submit pull requests for new features or bug fixes!

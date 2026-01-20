@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detoxify Settings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #075e54;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #65676b;
+            margin-top: 4px;
+        }
+
+        button {
+            background: #128c7e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #075e54;
+        }
+
+        .status {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Detoxify Settings</h1>
+        <p>Configure how Detoxify protects your conversations.</p>
+
+        <label for="trustedEmail">Trusted Contact Email</label>
+        <input type="email" id="trustedEmail" placeholder="e.g., support@friend.com">
+        <div class="hint">Emergency alerts will be sent here if repeated toxicity is detected.</div>
+
+        <label for="trustedPhone">Trusted WhatsApp Number</label>
+        <input type="text" id="trustedPhone" placeholder="e.g., +1234567890">
+        <div class="hint">Alerts will also be sent as a WhatsApp message to this number.</div>
+
+        <label for="alertThreshold">Toxicity Threshold (Messages)</label>
+        <select id="alertThreshold">
+            <option value="3">3 toxic messages</option>
+            <option value="5">5 toxic messages</option>
+            <option value="10">10 toxic messages</option>
+        </select>
+        <div class="hint">Alert trusted contact after this many harmful messages in a single chat.</div>
+
+        <label for="emailServiceId">EmailJS Service ID</label>
+        <input type="text" id="emailServiceId" placeholder="e.g., service_xxx">
+        <div class="hint">Your EmailJS Service ID.</div>
+
+        <label for="emailTemplateId">EmailJS Template ID</label>
+        <input type="text" id="emailTemplateId" placeholder="e.g., template_xxx">
+        <div class="hint">Your EmailJS Template ID.</div>
+
+        <label for="emailjsKey">EmailJS User ID (Public Key)</label>
+        <input type="text" id="emailjsKey" placeholder="e.g., user_xxx">
+        <div class="hint">The 3 keys required for automated email alerts.</div>
+
+        <label for="groqApiKey">Groq API Key</label>
+        <input type="password" id="groqApiKey" placeholder="Enter your Groq API Key (gsk_...)">
+        <div class="hint">Get your free key at <a href="https://console.groq.com/keys"
+                target="_blank">console.groq.com</a> to avoid limits.</div>
+
+        <button id="save">Save Settings</button>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

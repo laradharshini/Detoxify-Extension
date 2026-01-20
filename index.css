@@ -1,0 +1,144 @@
+/* index.css - Premium Detoxify Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --detox-primary: #ff4757;
+    --detox-secondary: #2f3542;
+    --detox-kind: #2ed573;
+    --detox-bg: rgba(255, 255, 255, 0.95);
+    --detox-glass: rgba(255, 255, 255, 0.85);
+    --detox-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --detox-radius: 12px;
+}
+
+/* Base Styles for Injected Elements */
+.detoxify-alert {
+    font-family: 'Outfit', sans-serif !important;
+    background: var(--detox-glass) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-left: 4px solid var(--detox-primary) !important;
+    border-radius: var(--detox-radius) !important;
+    box-shadow: var(--detox-shadow) !important;
+    padding: 12px 16px !important;
+    margin: 10px 0 !important;
+    color: var(--detox-secondary) !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    animation: detoxFadeIn 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards !important;
+    z-index: 10000 !important;
+    position: relative !important;
+    transition: transform 0.2s ease !important;
+}
+
+.detoxify-alert:hover {
+    transform: translateY(-2px);
+}
+
+.detoxify-alert strong {
+    color: var(--detox-primary) !important;
+    font-weight: 600 !important;
+    display: block !important;
+    margin-bottom: 4px !important;
+    font-size: 15px !important;
+}
+
+.detoxify-badge {
+    display: inline-block !important;
+    background: var(--detox-primary) !important;
+    color: white !important;
+    padding: 2px 8px !important;
+    border-radius: 20px !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    margin-top: 5px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Button Styling */
+.detoxify-kind-btn {
+    background: #f1f2f6 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    color: var(--detox-secondary) !important;
+    cursor: pointer !important;
+    font-family: inherit !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin: 8px 4px 0 0 !important;
+    padding: 6px 14px !important;
+    transition: all 0.2s ease !important;
+    outline: none !important;
+}
+
+.detoxify-kind-btn:hover {
+    background: var(--detox-secondary) !important;
+    color: white !important;
+    transform: scale(1.02);
+}
+
+.detoxify-kind-btn.report-btn {
+    border: 1px solid #dfe4ea !important;
+}
+
+.detoxify-kind-btn.hide-btn {
+    background: #2f3542 !important;
+    color: white !important;
+}
+
+#detoxify-replace-btn,
+.detoxify-style-btn {
+    margin-top: 10px !important;
+}
+
+#detoxify-replace-btn-kind {
+    background: var(--detox-kind) !important;
+    color: white !important;
+}
+
+#detoxify-replace-btn-funny {
+    background: #ff9f43 !important;
+    color: white !important;
+}
+
+#detoxify-replace-btn-professional {
+    background: #54a0ff !important;
+    color: white !important;
+}
+
+/* Input Warning Specifics */
+#detoxify-input-warning {
+    margin-bottom: 15px !important;
+    border-left: 4px solid var(--detox-kind) !important;
+}
+
+#detoxify-input-warning strong {
+    color: var(--detox-kind) !important;
+}
+
+.detox-style-label {
+    font-weight: 600 !important;
+    color: var(--detox-secondary) !important;
+    margin-right: 4px !important;
+}
+
+/* Animations */
+@keyframes detoxFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hidden Message State */
+.detox-hidden {
+    display: none !important;
+}

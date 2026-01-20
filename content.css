@@ -1,0 +1,45 @@
+/* content.css - Styles for injected Detoxify UI */
+
+.detoxify-alert {
+    background: rgba(255, 235, 238, 0.95);
+    border-left: 4px solid #f44336;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #b71c1c;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: slideIn 0.3s ease-out;
+}
+
+.detoxify-kind-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+
+.detoxify-kind-btn:hover {
+    background: #388e3c;
+}
+
+.detoxify-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    background: #f44336;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

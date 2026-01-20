@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 300px;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 15px;
+            background: #f0f2f5;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #4caf50;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #075e54;
+        }
+
+        .stats {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background: #128c7e;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #075e54;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="dot"></div>
+        <h2>Detoxify Active</h2>
+    </div>
+    <div class="stats">
+        <div class="stat-row">
+            <span>Status:</span>
+            <span style="color: #4caf50; font-weight: bold;">Monitoring</span>
+        </div>
+        <div class="stat-row">
+            <span>Harmful Messages Blocked:</span>
+            <span id="blocked-count">0</span>
+        </div>
+    </div>
+    <a href="options.html" target="_blank" class="btn">Settings & Emergency Contacts</a>
+    <script src="popup.js"></script>
+</body>
+
+</html>

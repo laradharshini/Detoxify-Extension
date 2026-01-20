@@ -31,9 +31,9 @@ function restoreOptions() {
     chrome.storage.sync.get({
         trustedEmail: '',
         trustedPhone: '',
-        emailServiceId: 'service_xn41bmg',
-        emailTemplateId: 'template_lzfvjhn',
-        emailjsKey: '2_gC-ZKy79JYi5pY9',
+        emailServiceId: '',
+        emailTemplateId: '',
+        emailjsKey: '',
         alertThreshold: '3',
         groqApiKey: ''
     }, (items) => {
